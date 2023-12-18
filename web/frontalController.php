@@ -13,7 +13,7 @@ use NP\Controllers\AbstractController as CGlobal;
 if (isset($_GET['controller'])) {
     $controller = ucfirst($_GET["controller"]);
 } else {
-    $controller = "Main";
+    $controller = "Presentation";
 }
 
 if (isset($_GET['action'])) {

@@ -13,7 +13,7 @@
 </head>
 <body>
 <header>
-    <h1>Raphaël Izoret - Portfolio : <?= $pageTitle ?></h1>
+    <h1>Raphaël Izoret - <?= $pageTitle ?></h1>
     <nav>
         <ul>
             <li><a href="?controller=Presentation&action=displayIndex">Présentation</a></li>

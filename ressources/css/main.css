@@ -1,41 +1,64 @@
+:root {
+    --light-bg_clr: #c1c1c1;
+    --dark-bg_clr: rgb(59, 64, 66);
+
+    --param-bg_clr: var(--light-bg_clr);
+}
+
 body {
     display: grid;
     grid-template-rows: auto 1fr auto; /* Trois lignes : une pour l'en-tête, une pour le contenu, une pour le footer */
+
     min-height: 100vh; /* Pour que le contenu s'étende sur toute la hauteur de la fenêtre */
     margin: 0;
     padding: 0;
+
+    background-color: var(--param-bg_clr);
 }
 
 header {
     grid-row: 1;
+
+    #display: grid;
+    #place-items: center;
 }
 
 #subPage {
     grid-row: 2;
-    margin: 0 10%;
+
+    padding: 1% 2%;
+    margin: 0 15%;
+
+    border: 0 solid #000;
+
+    box-shadow: 8px 8px 7px #888;
+
+    background-color: #fff;
 }
 
 footer {
     grid-row: 3;
+
     background: #f0f0f0;
     color: #616161;
     text-align: center;
     padding: 10px 0;
 }
 
+/* ----------------------------- */
+
 nav {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
     background: #f0f0f0;
     border: 1px solid #ccc;
 }
 
 nav ul {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+
     padding: 0;
     margin: 0;
     list-style: none;
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
 }
 
 nav ul li {
@@ -48,4 +71,9 @@ nav ul li a {
     text-decoration: none;
     color: #616161;
     padding: 10px 0;
+}
+
+
+h1 {
+    text-align: center;
 }
