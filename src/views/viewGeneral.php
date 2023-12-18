@@ -1,3 +1,8 @@
+<?php
+
+use NP\Configuration\WebsiteConfiguration as W;
+
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -5,15 +10,24 @@
     <meta name="description" content="portfolio raphaël izoret CV professionnal"/>
 
     <title>Portfolio - <?= $pageTitle ?></title>
-    <link rel="icon" type="image/png" href="../ressources/images/website_icon.png"/>
+    <link rel="icon" type="image/png" href="/ressources/images/website_icon.png"/>
 
-    <link rel="stylesheet" href="../ressources/css/main.css"/>
-    <link rel="stylesheet" href="../ressources/css/<?= $secondaryCSSpath ?>">
-    <script src="../ressources/javascript/functions.js"></script>
+    <link rel="stylesheet" href="/ressources/css/main.css"/>
+    <link rel="stylesheet" href="/ressources/css/<?= $secondaryCSSpath ?>">
+
+    <script src="/ressources/javascript/general.js"></script>
+    <script type="text/javascript">computeTheme("<?= W::getCurrentTheme() ?>");</script>
+
 </head>
 <body>
 <header>
-    <h1>Raphaël Izoret - <?= $pageTitle ?></h1>
+    <div id="iconsAndPageTitle">
+        <a href="?action=SwitchTheme">
+            <img id="theme_icon" alt="theme switching icon"
+                 src="/ressources/images/icons/theme_<?= W::getCurrentTheme() ?>.png"/>
+        </a>
+        <h1>Raphaël Izoret - <?= $pageTitle ?></h1>
+    </div>
     <nav>
         <ul>
             <li><a href="?controller=Presentation&action=displayIndex">Présentation</a></li>

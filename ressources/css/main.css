@@ -1,8 +1,29 @@
 :root {
+    /* cf. general.js */
+
     --light-bg_clr: #c1c1c1;
     --dark-bg_clr: rgb(59, 64, 66);
-
     --param-bg_clr: var(--light-bg_clr);
+
+    --light-section_clr: #fff;
+    --dark-section_clr: rgb(35, 37, 38);
+    --param-section_clr: var(--light-section_clr);
+
+    --light-txt_clr: rgb(35, 37, 38);
+    --dark-txt_clr: #d1cdc7;
+    --param-txt_clr: var(--light-txt_clr);
+
+    --light-footer_bg_clr: #f0f0f0;
+    --dark-footer_bg_clr: rgb(47, 51, 54);
+    --param-footer_bg_clr: var(--light-footer_bg_clr);
+
+    --light-special_txt_clr: #616161;
+    --dark-special_txt_clr: #939393;
+    --param-special_txt_clr: var(--light-special_txt_clr);
+}
+
+html {
+    width: 100%;
 }
 
 body {
@@ -19,8 +40,9 @@ body {
 header {
     grid-row: 1;
 
-    #display: grid;
-    #place-items: center;
+    display: grid;
+
+    height: 130px;
 }
 
 #subPage {
@@ -33,22 +55,58 @@ header {
 
     box-shadow: 8px 8px 7px #888;
 
-    background-color: #fff;
+    background-color: var(--param-section_clr);
 }
 
 footer {
     grid-row: 3;
 
-    background: #f0f0f0;
-    color: #616161;
+    background-color: var(--param-footer_bg_clr);
     text-align: center;
     padding: 10px 0;
 }
 
 /* ----------------------------- */
 
+h1, h2, h3, p {
+    color: var(--param-txt_clr);
+}
+
+header > #iconsAndPageTitle {
+    grid-row: 1;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+
+    max-height: 10%;
+    min-height: 0;
+    min-width: 0;
+}
+
+header > #iconsAndPageTitle > a {
+    grid-column: 1;
+
+    max-height: 100%;
+    overflow: hidden;
+    min-width: 0;
+}
+
+header > #iconsAndPageTitle > a > img {
+    height: 100%;
+}
+
+header > #iconsAndPageTitle > h1 {
+    grid-column: 2;
+    text-align: center;
+
+    max-height: 100%;
+}
+
+
 nav {
-    background: #f0f0f0;
+    grid-row: 2;
+
+    background: var(--param-footer_bg_clr);
     border: 1px solid #ccc;
 }
 
@@ -69,11 +127,12 @@ nav ul li {
 nav ul li a {
     display: block;
     text-decoration: none;
-    color: #616161;
+    color: var(--param-special_txt_clr);
     padding: 10px 0;
 }
 
 
-h1 {
-    text-align: center;
+#theme_icon:hover {
+    cursor: pointer;
 }
+
