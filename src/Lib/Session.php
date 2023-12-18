@@ -1,8 +1,8 @@
 <?php
 
-namespace XC2S\Lib;
+namespace NP\Lib;
 
-use XC2S\Configuration\WebsiteConfiguration;
+use NP\Configuration\WebsiteConfiguration;
 use Exception;
 
 class Session

@@ -1,6 +1,6 @@
 <?php
 
-namespace XC2S\Configuration;
+namespace NP\Configuration;
 
 use http\Exception\RuntimeException;
 
@@ -17,7 +17,7 @@ class DatabaseConfiguration
 
     static private array $localConf = array(
         'hostname' => 'localhost',
-        'database' => 'XC2S',
+        'database' => 'NP',
         'port' => '3306',
         'login' => 'notisma',
         'password' => ''
@@ -27,7 +27,7 @@ class DatabaseConfiguration
     {
         if ($_SERVER["HTTP_HOST"] == "webinfo.iutmontp.univ-montp2.fr")
             return self::$iutConf;
-        else if ($_SERVER['SERVER_PORT'] == 6942)
+        else if ($_SERVER['SERVER_PORT'] == 2023)
             return self::$localConf;
         else
             throw new RuntimeException("Configuration non-trouvée !");

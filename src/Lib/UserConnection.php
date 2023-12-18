@@ -1,6 +1,6 @@
 <?php
 
-namespace XC2S\Lib;
+namespace NP\Lib;
 
 class UserConnection
 {

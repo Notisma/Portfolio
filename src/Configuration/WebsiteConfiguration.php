@@ -1,6 +1,6 @@
 <?php
 
-namespace XC2S\Configuration;
+namespace NP\Configuration;
 
 class WebsiteConfiguration
 {

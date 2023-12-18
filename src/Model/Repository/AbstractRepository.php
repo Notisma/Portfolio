@@ -1,9 +1,9 @@
 <?php
 
-namespace XC2S\Model\Repository;
+namespace NP\Model\Repository;
 
-use XC2S\Configuration\DatabaseConnection;
-use XC2S\Model\DataObject\AbstractDataObject;
+use NP\Configuration\DatabaseConnection;
+use NP\Model\DataObject\AbstractDataObject;
 
 abstract class AbstractRepository
 {

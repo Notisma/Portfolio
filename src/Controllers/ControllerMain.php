@@ -1,6 +1,6 @@
 <?php
 
-namespace XC2S\Controllers;
+namespace NP\Controllers;
 
 class ControllerMain
 {

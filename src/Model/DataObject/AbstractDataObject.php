@@ -1,8 +1,8 @@
 <?php
 
-namespace XC2S\Model\DataObject;
+namespace NP\Model\DataObject;
 
-use XC2S\Configuration\DatabaseConnection;
+use NP\Configuration\DatabaseConnection;
 
 abstract class AbstractDataObject
 {

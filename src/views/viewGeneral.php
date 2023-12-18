@@ -4,7 +4,7 @@
     <meta charset="utf-8"/>
     <meta name="description" content="xenoblade 2 combat cheat sheet"/>
 
-    <title>XC2S - <?= $pageTitle ?></title>
+    <title>NP - <?= $pageTitle ?></title>
     <link rel="icon" type="image/png" href="../ressources/images/website_icon.png"/>
 
     <link rel="stylesheet" href="../ressources/css/main.css"/>
@@ -15,7 +15,7 @@
 <header>
     <h1>Xenoblade Chronicles 2 Sheet - <?= $pageTitle ?></h1>
     <?php
-    if (\XC2S\Lib\UserConnection::isConnected())
+    if (\NP\Lib\UserConnection::isConnected())
         echo '<a href="?controller=Connection&action=displayUserDetails"><img src="../ressources/images/connection/user.png" alt="user"></a>';
     else
         echo '<a href="?controller=Connection&action=displayConnectionPage"><img src="../ressources/images/connection/enter.png" alt="login"></a>';
