@@ -2,9 +2,9 @@
 <html lang="en">
 <head>
     <meta charset="utf-8"/>
-    <meta name="description" content="xenoblade 2 combat cheat sheet"/>
+    <meta name="description" content="portfolio raphaël izoret CV professionnal"/>
 
-    <title>NP - <?= $pageTitle ?></title>
+    <title>Portfolio - <?= $pageTitle ?></title>
     <link rel="icon" type="image/png" href="../ressources/images/website_icon.png"/>
 
     <link rel="stylesheet" href="../ressources/css/main.css"/>
@@ -13,22 +13,16 @@
 </head>
 <body>
 <header>
-    <h1>Xenoblade Chronicles 2 Sheet - <?= $pageTitle ?></h1>
-    <?php
-    if (\NP\Lib\UserConnection::isConnected())
-        echo '<a href="?controller=Connection&action=displayUserDetails"><img src="../ressources/images/connection/user.png" alt="user"></a>';
-    else
-        echo '<a href="?controller=Connection&action=displayConnectionPage"><img src="../ressources/images/connection/enter.png" alt="login"></a>';
-    ?>
+    <h1>Raphaël Izoret - Portfolio : <?= $pageTitle ?></h1>
     <nav>
-        <div><a href="?controller=Main&action=displayIndex">Accueil</a></div>
-        <div><a href="?controller=DriverCombo&action=displayDriverCombo">Driver Combos</a></div>
-        <div><a href="?controller=BladeCombo&action=displayBladeCombo">Blade Combos</a></div>
-        <div><a href="?controller=TeamBuilder&action=displayBuilderIndex">Team Builder</a></div>
+        <ul>
+            <li><a href="?controller=Presentation&action=displayIndex">Présentation</a></li>
+            <li><a href="?controller=CV&action=displayIndex">Mon CV</a></li>
+            <li><a href="?controller=Projection&action=displayIndex">Projet Professionnel</a></li>
+            <li><a href="?controller=Realisations&action=displayIndex">Mes réalisations</a></li>
+        </ul>
     </nav>
 </header>
-
-<h2><?= $pageTitle ?></h2>
 
 <section id="subPage">
     <?php require __DIR__ . "/$path"; ?>

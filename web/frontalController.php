@@ -8,7 +8,7 @@ $loader->register();
 // enregistrement d'une association "namespace" → "dossier"
 $loader->addNamespace('NP', __DIR__ . '/../src');
 
-use NP\Controllers\ControllerMain as CGlobal;
+use NP\Controllers\AbstractController as CGlobal;
 
 if (isset($_GET['controller'])) {
     $controller = ucfirst($_GET["controller"]);

@@ -1,0 +1,51 @@
+body {
+    display: grid;
+    grid-template-rows: auto 1fr auto; /* Trois lignes : une pour l'en-tête, une pour le contenu, une pour le footer */
+    min-height: 100vh; /* Pour que le contenu s'étende sur toute la hauteur de la fenêtre */
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    grid-row: 1;
+}
+
+#subPage {
+    grid-row: 2;
+    margin: 0 10%;
+}
+
+footer {
+    grid-row: 3;
+    background: #f0f0f0;
+    color: #616161;
+    text-align: center;
+    padding: 10px 0;
+}
+
+nav {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    background: #f0f0f0;
+    border: 1px solid #ccc;
+}
+
+nav ul {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+}
+
+nav ul li {
+    text-align: center;
+    border: 1px solid #ccc;
+}
+
+nav ul li a {
+    display: block;
+    text-decoration: none;
+    color: #616161;
+    padding: 10px 0;
+}
