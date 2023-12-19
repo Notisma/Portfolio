@@ -26,7 +26,20 @@ use NP\Configuration\WebsiteConfiguration as W;
             <img id="theme_icon" alt="theme switching icon"
                  src="<?= W::getSiteRoot() ?>/ressources/images/icons/theme_<?= W::getCurrentTheme() ?>.png"/>
         </a>
+
         <h1>Raphaël Izoret - <?= $pageTitle ?></h1>
+
+        <img id="language_icon" alt="language switching icon"
+             src="<?= W::getSiteRoot() ?>/ressources/images/icons/language_<?= W::getCurrentLanguage() ?>.png"
+             onclick="spawnLanguageDropdown()"/>
+        <div id="language_dropdown">
+            <a href="#">Français</a>
+            <a href="#">Anglais</a>
+        </div>
+        <!--        <a href="?action=SwitchLanguage">
+            <img id="language_icon" alt="language switching icon"
+                 src="<?php /*= W::getSiteRoot() */ ?>/ressources/images/icons/language_<?php /*= W::getCurrentLanguage() */ ?>.png"/>
+        </a>-->
     </div>
     <nav>
         <ul>

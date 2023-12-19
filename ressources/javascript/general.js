@@ -7,3 +7,7 @@ function computeTheme(theme) {
             r.style.setProperty('--param-' + cssElem, newTheme.getPropertyValue('--' + theme + '-' + cssElem))
     );
 }
+
+function spawnLanguageDropdown() {
+
+}
