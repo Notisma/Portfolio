@@ -10,12 +10,12 @@ use NP\Configuration\WebsiteConfiguration as W;
     <meta name="description" content="portfolio raphaël izoret CV professionnal"/>
 
     <title>Portfolio - <?= $pageTitle ?></title>
-    <link rel="icon" type="image/png" href="/ressources/images/website_icon.png"/>
+    <link rel="icon" type="image/png" href="<?= W::getSiteRoot() ?>/ressources/images/website_icon.png"/>
 
-    <link rel="stylesheet" href="/ressources/css/main.css"/>
-    <link rel="stylesheet" href="/ressources/css/<?= $secondaryCSSpath ?>">
+    <link rel="stylesheet" href="<?= W::getSiteRoot() ?>/ressources/css/main.css"/>
+    <link rel="stylesheet" href="<?= W::getSiteRoot() ?>/ressources/css/<?= $secondaryCSSpath ?>">
 
-    <script src="/ressources/javascript/general.js"></script>
+    <script src="<?= W::getSiteRoot() ?>/ressources/javascript/general.js"></script>
     <script type="text/javascript">computeTheme("<?= W::getCurrentTheme() ?>");</script>
 
 </head>
@@ -24,7 +24,7 @@ use NP\Configuration\WebsiteConfiguration as W;
     <div id="iconsAndPageTitle">
         <a href="?action=SwitchTheme">
             <img id="theme_icon" alt="theme switching icon"
-                 src="/ressources/images/icons/theme_<?= W::getCurrentTheme() ?>.png"/>
+                 src="<?= W::getSiteRoot() ?>/ressources/images/icons/theme_<?= W::getCurrentTheme() ?>.png"/>
         </a>
         <h1>Raphaël Izoret - <?= $pageTitle ?></h1>
     </div>
