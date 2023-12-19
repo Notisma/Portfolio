@@ -12,6 +12,10 @@ abstract class AbstractController
         $cssPath = str_replace('view', 'style', $viewPath);
         $cssPath = str_replace('.php', '.css', $cssPath);
 
+        if (!file_exists(__DIR__ . "/../views/" . $viewPath . '.php'))
+            $viewPath .= '_' . WebsiteConfiguration::getCurrentLanguage();
+        $viewPath .= '.php';
+
         $params = array_merge(
             [
                 'pageTitle' => $pageTitle,
@@ -32,10 +36,25 @@ abstract class AbstractController
         header('Location: ' . $_SERVER['HTTP_REFERER']);
         exit();
     }
+    #[NoReturn] public static function switchLanguage(): void
+    {
+        if (!isset($_GET['lang'])) {
+            self::displayError("Pas de langue en POST...");
+            die();
+        }
+        $lang = $_GET['lang'];
+        if ($lang != 'fr' && $lang != 'en') {
+            self::displayError("Mauvaise langue !");
+            die();
+        }
+        WebsiteConfiguration::setLanguage($lang);
+        header('Location: ' . $_SERVER['HTTP_REFERER']);
+        exit();
+    }
 
     public static function displayError(string $error): void
     {
-        self::displayView("Error", 'viewError.php', [
+        self::displayView("Error", 'viewError', [
             'errorStr' => $error
         ]);
     }

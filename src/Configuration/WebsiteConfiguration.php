@@ -37,14 +37,14 @@ class WebsiteConfiguration
 
     public static function getCurrentLanguage(): string
     {
-        return 'french';
+        if (!Session::getInstance()->contains('language'))
+            Session::getInstance()->register('language', 'fr');
+
+        return Session::getInstance()->read('language');
     }
-    public static function switchLanguage(): void
+    public static function setLanguage(string $lang): void
     {
-        $lang = self::getCurrentLanguage();
-        if ($lang == 'french') Session::getInstance()->register('language', 'english');
-        else if ($lang == 'english') Session::getInstance()->register('language', 'french');
-        else AbstractController::displayError("Erreur de session (thème french/english)");
+        Session::getInstance()->register('language', $lang);
     }
 
 }

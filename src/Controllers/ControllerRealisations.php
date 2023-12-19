@@ -7,6 +7,6 @@ class ControllerRealisations extends AbstractController
 
     public static function displayIndex(): void
     {
-        self::displayView("Réalisations", "realisations/viewIndex.php");
+        self::displayView("Réalisations", "realisations/viewIndex");
     }
 }

@@ -28,7 +28,7 @@ html {
 
 body {
     display: grid;
-    grid-template-rows: 5fr 80fr 10fr;
+    grid-template-rows: auto auto auto;
 
     min-height: 100vh; /* Pour que le contenu s'étende sur toute la hauteur de la fenêtre */
     margin: 0;
@@ -41,10 +41,7 @@ header {
     grid-row: 1;
 
     display: grid;
-
-
 }
-
 
 #subPage {
     grid-row: 2;
@@ -105,7 +102,11 @@ header > #iconsAndPageTitle > h1 {
     max-height: 100%;
 }
 
-header > #iconsAndPageTitle > img {
+header > #iconsAndPageTitle > div {
+    margin-left: 80%;
+}
+
+header > #iconsAndPageTitle > div > img {
     grid-column: 3;
     max-height: 100%;
     overflow: hidden;
@@ -113,14 +114,17 @@ header > #iconsAndPageTitle > img {
 
     max-width: 100px;
     height: auto;
-}
 
+    margin-bottom: -3%;
+}
 
 header > nav {
     grid-row: 2;
 
     background: var(--param-footer_bg_clr);
     border: 1px solid #ccc;
+
+    height: 30%;
 }
 
 header > nav > ul {
@@ -130,6 +134,8 @@ header > nav > ul {
     padding: 0;
     margin: 0;
     list-style: none;
+
+    height: 100%;
 }
 
 header > nav > ul > li {
@@ -150,42 +156,38 @@ header > nav > ul > li > a {
 }
 
 
-
- /* Dropdown Button */
-#language_icon {
-  background-color: #3498DB;
-  color: white;
-  padding: 16px;
-  font-size: 16px;
-  border: none;
-  cursor: pointer;
-}
-
 /* Dropdown button on hover & focus */
 #language_icon:hover, #language_icon:focus {
-  background-color: #2980B9;
+    cursor: pointer;
 }
 
 /* Dropdown Content (Hidden by Default) */
 #language_dropdown {
-  display: none;
-  position: absolute;
-  background-color: #f1f1f1;
-  min-width: 160px;
-  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
-  z-index: 1;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+    z-index: 1;
 }
 
 /* Links inside the dropdown */
 #language_dropdown a {
-  color: black;
-  padding: 12px 16px;
-  text-decoration: none;
-  display: block;
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
 }
 
 /* Change color of dropdown links on hover */
-#language_dropdown a:hover {background-color: #ddd;}
+#language_dropdown a:hover {
+    background-color: #ddd;
+}
 
-/* Show the dropdown menu (use JS to add this class to the #language_dropdown container when the user clicks on the dropdown button) */
-.show {display:block;}
+/* JS Props */
+.hide {
+    display: none;
+}
+
+.show {
+    display: block;
+}

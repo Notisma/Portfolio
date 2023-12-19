@@ -7,6 +7,6 @@ class ControllerPresentation extends AbstractController
 
     public static function displayIndex(): void
     {
-        self::displayView("Présentation", "presentation/viewIndex.php");
+        self::displayView("Présentation", "presentation/viewIndex");
     }
 }
