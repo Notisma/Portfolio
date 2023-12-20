@@ -4,6 +4,7 @@ namespace NP\Controllers;
 
 use JetBrains\PhpStorm\NoReturn;
 use NP\Configuration\WebsiteConfiguration;
+use NP\Lib\Translation;
 
 abstract class AbstractController
 {
@@ -13,7 +14,7 @@ abstract class AbstractController
         $cssPath = str_replace('.php', '.css', $cssPath);
 
         if (!file_exists(__DIR__ . "/../views/" . $viewPath . '.php'))
-            $viewPath .= '_' . WebsiteConfiguration::getCurrentLanguage();
+            $viewPath .= '_' . Translation::getCurrentLanguage();
         $viewPath .= '.php';
 
         $params = array_merge(
@@ -47,7 +48,7 @@ abstract class AbstractController
             self::displayError("Mauvaise langue !");
             die();
         }
-        WebsiteConfiguration::setLanguage($lang);
+        Translation::setLanguage($lang);
         header('Location: ' . $_SERVER['HTTP_REFERER']);
         exit();
     }

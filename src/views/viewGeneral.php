@@ -1,6 +1,7 @@
 <?php
 
 use NP\Configuration\WebsiteConfiguration as W;
+use NP\Lib\Translation as T;
 
 ?>
 <!DOCTYPE html>
@@ -17,7 +18,6 @@ use NP\Configuration\WebsiteConfiguration as W;
 
     <script src="<?= W::getSiteRoot() ?>/ressources/javascript/general.js"></script>
     <script type="text/javascript">computeTheme("<?= W::getCurrentTheme() ?>");</script>
-
 </head>
 <body>
 <header>
@@ -31,21 +31,21 @@ use NP\Configuration\WebsiteConfiguration as W;
 
         <div id="language_icon_div">
             <img id="language_icon" alt="language switching icon"
-                 src="<?= W::getSiteRoot() ?>/ressources/images/icons/language_<?= W::getCurrentLanguage() ?>.png"
+                 src="<?= W::getSiteRoot() ?>/ressources/images/icons/language_<?= T::getCurrentLanguage() ?>.png"
                  onclick="spawnLanguageDropdown()"/>
             <div id="language_dropdown" class="hide">
-                <a href="?action=switchLanguage&lang=fr">Français</a>
-                <a href="?action=switchLanguage&lang=en">Anglais</a>
+                <a href="?action=switchLanguage&lang=fr"><?= T::translate('Français', 'French')?></a>
+                <a href="?action=switchLanguage&lang=en"><?= T::translate('Anglais', 'English')?></a>
             </div>
         </div>
     </div>
     <nav>
-        <ul>
-            <li><a href="?controller=Presentation&action=displayIndex">Présentation</a></li>
-            <li><a href="?controller=CV&action=displayIndex">Mon CV</a></li>
-            <li><a href="?controller=Projection&action=displayIndex">Projet Professionnel</a></li>
-            <li><a href="?controller=Realisations&action=displayIndex">Mes réalisations</a></li>
-        </ul>
+        <div id="sectionsMenu">
+            <div class="sectionsMenuItem"><a href="?controller=Presentation&action=displayIndex"><?=T::getTitleElem_Presentation()?></a></div>
+            <div class="sectionsMenuItem"><a href="?controller=CV&action=displayIndex"><?=T::getTitleElem_CV()?></a></div>
+            <div class="sectionsMenuItem"><a href="?controller=Projection&action=displayIndex"><?=T::getTitleElem_Projet()?></a></div>
+            <div class="sectionsMenuItem"><a href="?controller=Realisations&action=displayIndex"><?=T::getTitleElem_Realisations()?></a></div>
+        </div>
     </nav>
 </header>
 
@@ -55,9 +55,14 @@ use NP\Configuration\WebsiteConfiguration as W;
 
 <footer>
     <p>--------------------
-        <br>Portfolio de Raphaël Izoret
+        <?= T::translate(
+        '<br>Portfolio de Raphaël Izoret
         <br>Tous droits réservés
-        <br><a href="https://gitlabinfo.iutmontp.univ-montp2.fr/izoretr/notsportfolio">Code source</a>
+        <br><a href="https://gitlabinfo.iutmontp.univ-montp2.fr/izoretr/notsportfolio">Code source</a>'
+        , '<br>Portfolio of Raphaël Izoret
+        <br>All rights reserved
+        <br><a href="https://gitlabinfo.iutmontp.univ-montp2.fr/izoretr/notsportfolio">Source code</a>'
+        )?>
         <br>--------------------
     </p>
 </footer>

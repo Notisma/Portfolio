@@ -35,16 +35,4 @@ class WebsiteConfiguration
         else AbstractController::displayError("Erreur de session (thème light/dark)");
     }
 
-    public static function getCurrentLanguage(): string
-    {
-        if (!Session::getInstance()->contains('language'))
-            Session::getInstance()->register('language', 'fr');
-
-        return Session::getInstance()->read('language');
-    }
-    public static function setLanguage(string $lang): void
-    {
-        Session::getInstance()->register('language', $lang);
-    }
-
 }
