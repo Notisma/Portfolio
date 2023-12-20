@@ -54,7 +54,12 @@ use NP\Configuration\WebsiteConfiguration as W;
 </section>
 
 <footer>
-    <p>--------------------<br/>Bye world (footer...)<br/>--------------------</p>
+    <p>--------------------
+        <br>Portfolio de Raphaël Izoret
+        <br>Tous droits réservés
+        <br><a href="https://gitlabinfo.iutmontp.univ-montp2.fr/izoretr/notsportfolio">Code source</a>
+        <br>--------------------
+    </p>
 </footer>
 </body>
 </html>
