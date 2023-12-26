@@ -1,6 +1,7 @@
 <?php
 
 use NP\Configuration\WebsiteConfiguration as W;
+use NP\Lib\Theme;
 use NP\Lib\Translation as T;
 
 ?>
@@ -17,14 +18,14 @@ use NP\Lib\Translation as T;
     <link rel="stylesheet" href="<?= W::getSiteRoot() ?>/ressources/css/<?= $secondaryCSSpath ?>">
 
     <script src="<?= W::getSiteRoot() ?>/ressources/javascript/general.js"></script>
-    <script type="text/javascript">computeTheme("<?= W::getCurrentTheme() ?>");</script>
+    <script type="text/javascript">computeTheme("<?= Theme::getCurrentTheme() ?>");</script>
 </head>
 <body>
 <header>
     <div id="iconsAndPageTitle">
         <a href="?action=SwitchTheme">
             <img id="theme_icon" alt="theme switching icon"
-                 src="<?= W::getSiteRoot() ?>/ressources/images/icons/theme_<?= W::getCurrentTheme() ?>.png"/>
+                 src="<?= W::getSiteRoot() ?>/ressources/images/icons/theme_<?= Theme::getCurrentTheme() ?>.png"/>
         </a>
 
         <h1>Raphaël Izoret - <?= $pageTitle ?></h1>
@@ -58,10 +59,10 @@ use NP\Lib\Translation as T;
         <?= T::translate(
         '<br>Portfolio de Raphaël Izoret
         <br>Tous droits réservés
-        <br><a href="https://gitlabinfo.iutmontp.univ-montp2.fr/izoretr/notsportfolio">Code source</a>'
+        <br><a href="' . \NP\Configuration\WebsiteConfiguration::getSourceCode() . '">Code source</a>'
         , '<br>Portfolio of Raphaël Izoret
         <br>All rights reserved
-        <br><a href="https://gitlabinfo.iutmontp.univ-montp2.fr/izoretr/notsportfolio">Source code</a>'
+        <br><a href="' . \NP\Configuration\WebsiteConfiguration::getSourceCode() . '">Source code</a>'
         )?>
         <br>--------------------
     </p>

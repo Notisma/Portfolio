@@ -4,6 +4,7 @@ namespace NP\Controllers;
 
 use JetBrains\PhpStorm\NoReturn;
 use NP\Configuration\WebsiteConfiguration;
+use NP\Lib\Theme;
 use NP\Lib\Translation;
 
 abstract class AbstractController
@@ -33,7 +34,7 @@ abstract class AbstractController
 
     #[NoReturn] public static function switchTheme(): void
     {
-        WebsiteConfiguration::switchTheme();
+        Theme::switchTheme();
         header('Location: ' . $_SERVER['HTTP_REFERER']);
         exit();
     }

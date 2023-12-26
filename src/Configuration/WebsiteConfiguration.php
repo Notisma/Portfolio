@@ -20,19 +20,8 @@ class WebsiteConfiguration
             throw new RuntimeException("Site root configuration non-trouvée !");
     }
 
-    public static function getCurrentTheme(): string
+    public static function getSourceCode(): string
     {
-        if (!Session::getInstance()->contains('theme'))
-            Session::getInstance()->register('theme', 'light');
-
-        return Session::getInstance()->read('theme');
+        return 'https://gitlabinfo.iutmontp.univ-montp2.fr/izoretr/notsportfolio" target="_blank" rel="noopener noreferrer';
     }
-    public static function switchTheme(): void
-    {
-        $curr = self::getCurrentTheme();
-        if ($curr == 'light') Session::getInstance()->register('theme', 'dark');
-        else if ($curr == 'dark') Session::getInstance()->register('theme', 'light');
-        else AbstractController::displayError("Erreur de session (thème light/dark)");
-    }
-
 }
