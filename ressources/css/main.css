@@ -85,20 +85,25 @@ header > #iconsAndPageTitle {
     min-width: 0;
 }
 
-header > #iconsAndPageTitle > a {
+header > #iconsAndPageTitle > #theme_icon_div {
     grid-column: 1;
 
     max-height: 100%;
     overflow: hidden;
-    min-width: 0;
 
+    min-width: 0;
     max-width: 100px;
 }
 
-header > #iconsAndPageTitle > a > img {
+header > #iconsAndPageTitle > #theme_icon_div > a > img {
     width: 100%;
     height: auto;
 }
+
+#theme_icon:hover {
+    cursor: pointer;
+}
+
 
 header > #iconsAndPageTitle > h1 {
     grid-column: 2;
@@ -107,20 +112,50 @@ header > #iconsAndPageTitle > h1 {
     max-height: 100%;
 }
 
-header > #iconsAndPageTitle > div {
-    margin-left: 80%;
+header > #iconsAndPageTitle > #language_icon_div {
+    grid-column: 3;
+
+    position: absolute;
+    right: 0;
 }
 
-header > #iconsAndPageTitle > div > img {
-    grid-column: 3;
+header > #iconsAndPageTitle > #language_icon_div > img {
     max-height: 100%;
     overflow: hidden;
     min-width: 0;
 
     max-width: 100px;
     height: auto;
+}
 
-    margin-bottom: -3%;
+/* Dropdown button on hover & focus */
+#language_icon:hover, #language_icon:focus {
+    cursor: pointer;
+}
+
+/* Dropdown Content (Hidden by Default) */
+#language_dropdown {
+    margin-top: -6%;
+
+    position: absolute;
+    right: 0;
+    background-color: #f1f1f1;
+    min-width: 150px;
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+/* Links inside the dropdown */
+#language_dropdown > a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+/* Change color of dropdown links on hover */
+#language_dropdown > a:hover {
+    background-color: #ddd;
 }
 
 header > nav {
@@ -156,38 +191,6 @@ header > nav > #sectionsMenu > .sectionsMenuItem > a {
     max-height: 100%;
 }
 
-
-#theme_icon:hover {
-    cursor: pointer;
-}
-
-
-/* Dropdown button on hover & focus */
-#language_icon:hover, #language_icon:focus {
-    cursor: pointer;
-}
-
-/* Dropdown Content (Hidden by Default) */
-#language_dropdown {
-    position: absolute;
-    background-color: #f1f1f1;
-    min-width: 160px;
-    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
-    z-index: 1;
-}
-
-/* Links inside the dropdown */
-#language_dropdown a {
-    color: black;
-    padding: 12px 16px;
-    text-decoration: none;
-    display: block;
-}
-
-/* Change color of dropdown links on hover */
-#language_dropdown a:hover {
-    background-color: #ddd;
-}
 
 /* JS Props */
 .hide {
