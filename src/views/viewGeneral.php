@@ -8,13 +8,13 @@ use NP\Lib\Translation as T;
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="utf-8"/>
-    <meta name="description" content="portfolio raphaël izoret CV professionnal"/>
+    <meta charset="utf-8">
+    <meta name="description" content="portfolio raphaël izoret CV professionnal">
 
     <title>Portfolio - <?= $pageTitle ?></title>
-    <link rel="icon" type="image/png" href="<?= W::getSiteRoot() ?>/ressources/images/website_icon.png"/>
+    <link rel="icon" type="image/png" href="<?= W::getSiteRoot() ?>/ressources/images/website_icon.png">
 
-    <link rel="stylesheet" href="<?= W::getSiteRoot() ?>/ressources/css/main.css"/>
+    <link rel="stylesheet" href="<?= W::getSiteRoot() ?>/ressources/css/main.css">
     <link rel="stylesheet" href="<?= W::getSiteRoot() ?>/ressources/css/<?= $secondaryCSSpath ?>">
 
     <script src="<?= W::getSiteRoot() ?>/ressources/javascript/general.js"></script>
@@ -25,7 +25,7 @@ use NP\Lib\Translation as T;
     <div id="iconsAndPageTitle">
         <a href="?action=SwitchTheme">
             <img id="theme_icon" alt="theme switching icon"
-                 src="<?= W::getSiteRoot() ?>/ressources/images/icons/theme_<?= Theme::getCurrentTheme() ?>.png"/>
+                 src="<?= W::getSiteRoot() ?>/ressources/images/icons/theme_<?= Theme::getCurrentTheme() ?>.png">
         </a>
 
         <h1>Raphaël Izoret - <?= $pageTitle ?></h1>
@@ -33,7 +33,7 @@ use NP\Lib\Translation as T;
         <div id="language_icon_div">
             <img id="language_icon" alt="language switching icon"
                  src="<?= W::getSiteRoot() ?>/ressources/images/icons/language_<?= T::getCurrentLanguage() ?>.png"
-                 onclick="spawnLanguageDropdown()"/>
+                 onclick="spawnLanguageDropdown()">
             <div id="language_dropdown" class="hide">
                 <a href="?action=switchLanguage&lang=fr"><?= T::translate('Français', 'French')?></a>
                 <a href="?action=switchLanguage&lang=en"><?= T::translate('Anglais', 'English')?></a>
