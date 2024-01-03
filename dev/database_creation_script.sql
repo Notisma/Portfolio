@@ -28,7 +28,7 @@ DROP TABLE IF EXISTS `Realisation`;
 /*!50503 SET character_set_client = utf8mb4 */;
 CREATE TABLE `Realisation` (
   `codename` varchar(255) NOT NULL,
-  `title` varchar(255) DEFAULT NULL,
+  `title` varchar(255) NOT NULL,
   PRIMARY KEY (`codename`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
@@ -42,6 +42,7 @@ DROP TABLE IF EXISTS `Skill`;
 /*!50503 SET character_set_client = utf8mb4 */;
 CREATE TABLE `Skill` (
   `name` varchar(255) NOT NULL,
+  `name_fr` varchar(255) NULL,
   `skillType` ENUM('LANGUAGE', 'TOOL', 'OTHER') NOT NULL,
   `masteryLevelOutOfTen` int NOT NULL,
   PRIMARY KEY (`name`)

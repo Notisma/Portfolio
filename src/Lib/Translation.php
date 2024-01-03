@@ -6,6 +6,7 @@ use RuntimeException;
 
 class Translation
 {
+    /** fr / en */
     public static function getCurrentLanguage(): string
     {
         if (!Session::getInstance()->contains('language'))
@@ -39,7 +40,7 @@ class Translation
 
     public static function getTitleElem_CV(): string
     {
-        return self::translate('Mon CV', 'My CV');
+        return self::translate('CV et compétences', 'CV & Skills');
     }
 
     public static function getTitleElem_Projet(): string

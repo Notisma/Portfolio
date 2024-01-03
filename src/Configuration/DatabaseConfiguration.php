@@ -17,7 +17,7 @@ class DatabaseConfiguration
 
     static private array $localConf = array(
         'hostname' => 'localhost',
-        'database' => 'NP',
+        'database' => 'portfolio',
         'port' => '3306',
         'login' => 'notisma',
         'password' => ''
