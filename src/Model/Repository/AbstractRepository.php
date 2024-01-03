@@ -9,7 +9,7 @@ abstract class AbstractRepository
 {
     protected abstract function getTableName(): string;
 
-    protected abstract function getPrimaryKeyName(): string;
+    protected abstract function getPrimaryKeyName(): ?string;
 
     protected abstract function getColumnNames(): array;
 

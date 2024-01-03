@@ -15,6 +15,10 @@
 /*!40101 SET @OLD_SQL_MODE=@@SQL_MODE, SQL_MODE='NO_AUTO_VALUE_ON_ZERO' */;
 /*!40111 SET @OLD_SQL_NOTES=@@SQL_NOTES, SQL_NOTES=0 */;
 
+DROP DATABASE IF EXISTS portfolio;
+CREATE DATABASE portfolio;
+USE portfolio;
+
 --
 -- Table structure for table `Realisation`
 --
@@ -23,11 +27,9 @@ DROP TABLE IF EXISTS `Realisation`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
 /*!50503 SET character_set_client = utf8mb4 */;
 CREATE TABLE `Realisation` (
-  `id` int NOT NULL AUTO_INCREMENT,
+  `codename` varchar(255) NOT NULL,
   `title` varchar(255) DEFAULT NULL,
-  `codename` varchar(255) DEFAULT NULL,
-  `icon` varchar(255) DEFAULT NULL,
-  PRIMARY KEY (`id`)
+  PRIMARY KEY (`codename`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
@@ -40,6 +42,7 @@ DROP TABLE IF EXISTS `Skill`;
 /*!50503 SET character_set_client = utf8mb4 */;
 CREATE TABLE `Skill` (
   `name` varchar(255) NOT NULL,
+  `skillType` ENUM('LANGUAGE', 'TOOL', 'OTHER') NOT NULL,
   `masteryLevelOutOfTen` int NOT NULL,
   PRIMARY KEY (`name`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
@@ -53,11 +56,11 @@ DROP TABLE IF EXISTS `Uses`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
 /*!50503 SET character_set_client = utf8mb4 */;
 CREATE TABLE `Uses` (
-  `realisation_id` int NOT NULL,
+  `realisation_name` varchar(255) NOT NULL,
   `skill_name` varchar(255) NOT NULL,
-  PRIMARY KEY (`realisation_id`,`skill_name`),
+  PRIMARY KEY (`realisation_name`,`skill_name`),
   KEY `skill_name` (`skill_name`),
-  CONSTRAINT `Uses_ibfk_1` FOREIGN KEY (`realisation_id`) REFERENCES `Realisation` (`id`),
+  CONSTRAINT `Uses_ibfk_1` FOREIGN KEY (`realisation_name`) REFERENCES `Realisation` (`codename`),
   CONSTRAINT `Uses_ibfk_2` FOREIGN KEY (`skill_name`) REFERENCES `Skill` (`name`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
