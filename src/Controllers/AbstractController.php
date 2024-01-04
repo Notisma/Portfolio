@@ -12,19 +12,17 @@ abstract class AbstractController
     protected static function displayView(string $pageTitle, string $viewPath, array $parameters = []): void
     {
         $cssPath = str_replace('view', 'style', $viewPath);
-        $cssPath = str_replace('.php', '.css', $cssPath);
+        $cssPath .= ".css";
 
         if (!file_exists(__DIR__ . "/../views/" . $viewPath . '.php'))
             $viewPath .= '_' . Translation::getCurrentLanguage();
         $viewPath .= '.php';
 
-        $params = array_merge(
-            [
+        $params = array_merge([
                 'pageTitle' => $pageTitle,
                 'path' => $viewPath,
                 'secondaryCSSpath' => $cssPath
-            ],
-            $parameters
+            ], $parameters
         );
         extract($params);
         require __DIR__ . "/../views/viewGeneral.php"; // Charge la view

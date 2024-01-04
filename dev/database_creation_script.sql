@@ -29,6 +29,7 @@ DROP TABLE IF EXISTS `Realisation`;
 CREATE TABLE `Realisation` (
   `codename` varchar(255) NOT NULL,
   `title` varchar(255) NOT NULL,
+  `title_fr` varchar(255) NULL,
   PRIMARY KEY (`codename`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;

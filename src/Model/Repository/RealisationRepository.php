@@ -22,6 +22,7 @@ class RealisationRepository extends AbstractRepository
         return array(
             'codename',
             'title',
+            'title_fr',
         );
     }
 
@@ -29,7 +30,8 @@ class RealisationRepository extends AbstractRepository
     {
         return new Realisation(
             $dataObjectArray['codename'],
-            $dataObjectArray['skill'],
+            $dataObjectArray['title'],
+            $dataObjectArray['title_fr'],
         );
     }
 }

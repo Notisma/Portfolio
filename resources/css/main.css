@@ -73,7 +73,7 @@ br {
     margin-bottom: 15px;
 }
 
-h1, h2, h3, p {
+h1, h2, h3, p, li {
     color: var(--param-txt_clr);
 }
 

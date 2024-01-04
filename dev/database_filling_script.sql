@@ -16,9 +16,9 @@ INSERT IGNORE INTO Skill (name, name_fr, skillType, masteryLevelOutOfTen) VALUES
 	('Electronics', 'Électronique', 'OTHER', 4)
 ;
 
-INSERT IGNORE INTO Realisation (codename, title) VALUES
-	('formatiut', 'Format''IUT'),
-	('badarduino', 'Arduino Project')
+INSERT IGNORE INTO Realisation (codename, title, title_fr) VALUES
+	('formatiut', 'Format''IUT', NULL),
+	('badarduino', 'Arduino Project', 'Projet Arduino')
 ;
 
 INSERT IGNORE INTO Uses (realisation_name, skill_name) VALUES
