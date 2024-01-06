@@ -9,7 +9,7 @@ use NP\Lib\Translation;
 
 abstract class AbstractController
 {
-    protected static function displayView(string $pageTitle, string $viewPath, array $parameters = []): void
+    public static function displayView(string $pageTitle, string $viewPath, array $parameters = []): void
     {
         $cssPath = str_replace('view', 'style', $viewPath);
         $cssPath .= ".css";

@@ -1,8 +1,4 @@
 -- MySQL dump 10.13  Distrib 8.0.35, for Linux (x86_64)
---
--- Host: localhost    Database: portfolio
--- ------------------------------------------------------
--- Server version	8.0.35-0ubuntu0.23.10.1
 
 /*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
 /*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
@@ -76,4 +72,3 @@ CREATE TABLE `Uses` (
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2024-01-03 12:00:51

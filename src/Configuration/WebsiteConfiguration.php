@@ -2,8 +2,6 @@
 
 namespace NP\Configuration;
 
-use NP\Controllers\AbstractController;
-use NP\Lib\Session;
 use RuntimeException;
 
 class WebsiteConfiguration
@@ -18,6 +16,11 @@ class WebsiteConfiguration
             return '';
         else
             throw new RuntimeException("Site root configuration non-trouvée !");
+    }
+
+    static public function getImages(): string
+    {
+        return self::getSiteRoot() . "/resources/images/";
     }
 
     public static function getSourceCode(): string

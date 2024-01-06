@@ -26,7 +26,7 @@ class ControllerRealisations extends AbstractController
             self::displayError("Fournir un vrai projet en get");
             die();
         }
-        self::displayView($proj->title . Translation::translate(" (détails)", " (details)"), "realisations/details/$proj->codename", [
+        self::displayView($proj->title . Translation::translate(" (détails)", " (details)"), "realisations/details/viewGenericDetail", [
             'project' => $proj,
         ]);
 

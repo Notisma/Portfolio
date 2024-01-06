@@ -41,4 +41,9 @@ class Skill extends AbstractDataObject
     {
         return $this->name;
     }
+
+    public function __toString(): string
+    {
+        return "$this->name ($this->masteryLevelOutOfTen/10)";
+    }
 }

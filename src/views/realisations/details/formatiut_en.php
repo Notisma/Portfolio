@@ -1,4 +1,3 @@
-<h2>Format'IUT</h2>
 <p>Format'IUT is a group project involving the creation of a large, dynamic website.<br>Created by a team of 6 people,
     including myself in the role of developer and product owner, the site is designed to offer practical, intuitive and
     secure management of internships and work-study programs at the Montpellier IUT.<br><img
