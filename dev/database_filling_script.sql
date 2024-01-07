@@ -20,7 +20,7 @@ VALUES ('Java', NULL, 'LANGUAGE', 9),
 
 INSERT IGNORE INTO Realisation (codename, title, title_fr)
 VALUES ('formatiut', 'Format''IUT', NULL),
-       ('badarduino', 'Arduino Project', 'Projet Arduino'),
+       ('arduino', 'Arduino Project', 'Projet Arduino'),
        ('revolve', 'Rev0lve', NULL),
        ('sockets', 'Network Sockets', 'Sockets Réseau')
 ;
@@ -33,8 +33,8 @@ VALUES ('formatiut', 'PHP'),
        ('formatiut', 'Git'),
        ('formatiut', 'Teamwork'),
        ('formatiut', 'JavaScript'),
-       ('badarduino', 'C++'),
-       ('badarduino', 'Electronics'),
+       ('arduino', 'C++'),
+       ('arduino', 'Electronics'),
        ('revolve', 'C#'),
        ('revolve', 'Unity'),
        ('sockets', 'C'),
