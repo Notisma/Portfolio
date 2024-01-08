@@ -10,7 +10,7 @@ class Translation
     public static function getCurrentLanguage(): string
     {
         if (!Session::getInstance()->contains('language'))
-            Session::getInstance()->register('language', 'fr');
+            Session::getInstance()->register('language', 'en');
 
         return Session::getInstance()->read('language');
     }

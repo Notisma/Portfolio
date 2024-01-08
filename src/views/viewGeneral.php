@@ -66,10 +66,10 @@ use NP\Lib\Translation as T;
     <p>--------------------
         <?= T::translate(
             '<br>Portfolio de Raphaël Izoret
-        <br>Tous droits réservés
+        <br>Aucuns droits réservés
         <br><a href="' . W::getSourceCode() . '">Code source</a>'
             , '<br>Portfolio of Raphaël Izoret
-        <br>All rights reserved
+        <br>No rights reserved
         <br><a href="' . W::getSourceCode() . '">Source code</a>'
         ) ?>
         <br>--------------------

@@ -95,9 +95,14 @@ header > #iconsAndPageTitle > #theme_icon_div {
     max-width: 100px;
 }
 
+header > #iconsAndPageTitle > #theme_icon_div > a {
+    min-height: 100%;
+}
+
+
 header > #iconsAndPageTitle > #theme_icon_div > a > img {
     width: 100%;
-    height: auto;
+    min-height: 100%;
 }
 
 #theme_icon:hover {
@@ -110,6 +115,7 @@ header > #iconsAndPageTitle > h1 {
     text-align: center;
 
     max-height: 100%;
+    white-space: nowrap;
 }
 
 header > #iconsAndPageTitle > #language_icon_div {

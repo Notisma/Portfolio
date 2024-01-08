@@ -5,18 +5,21 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="668ec5e6-5c3f-4b6d-8b5a-76d8b6035301" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/0971029d-0a18-40f9-b195-bf02b7662656.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/0971029d-0a18-40f9-b195-bf02b7662656/storage_v2/_src_/schema/information_schema.FNRwLQ.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/0971029d-0a18-40f9-b195-bf02b7662656/storage_v2/_src_/schema/performance_schema.kIw0nw.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/0971029d-0a18-40f9-b195-bf02b7662656/storage_v2/_src_/schema/portfolio.SAXdQg.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/nots_portfolio.iml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dev/database_creation_script.sql" beforeDir="false" afterPath="$PROJECT_DIR$/dev/database_creation_script.sql" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Controllers/AbstractController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controllers/AbstractController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Model/Repository/UsesRepository.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Model/Repository/UsesRepository.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/views/presentation/viewIndex_en.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/presentation/viewIndex_en.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/views/realisations/details/formatiut_en.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/realisations/details/formatiut_en.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/views/realisations/details/formatiut_fr.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/realisations/details/formatiut_fr.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/views/realisations/details/revolve_fr.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/realisations/details/revolve_fr.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/views/realisations/details/sockets_fr.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/realisations/details/sockets_fr.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/views/realisations/details/viewGenericDetail.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/realisations/details/viewGenericDetail.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/css/main.css" beforeDir="false" afterPath="$PROJECT_DIR$/resources/css/main.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/images/icons/language_en.png" beforeDir="false" afterPath="$PROJECT_DIR$/resources/images/icons/language_en.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/images/icons/language_fr.png" beforeDir="false" afterPath="$PROJECT_DIR$/resources/images/icons/language_fr.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/images/icons/theme_dark.png" beforeDir="false" afterPath="$PROJECT_DIR$/resources/images/icons/theme_dark.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/images/icons/theme_light.png" beforeDir="false" afterPath="$PROJECT_DIR$/resources/images/icons/theme_light.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/views/realisations/details/arduino_fr.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/realisations/details/arduino_fr.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -107,6 +110,7 @@
       <workItem from="1704580704685" duration="3872000" />
       <workItem from="1704717208308" duration="3253000" />
       <workItem from="1704726244234" duration="5126000" />
+      <workItem from="1704739529273" duration="842000" />
     </task>
     <servers />
   </component>
