@@ -3,7 +3,7 @@
 /*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
 /*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
 /*!40101 SET @OLD_COLLATION_CONNECTION=@@COLLATION_CONNECTION */;
-/*!50503 SET NAMES utf8mb4 */;
+/*!50503 SET NAMES utf8 */;
 /*!40103 SET @OLD_TIME_ZONE=@@TIME_ZONE */;
 /*!40103 SET TIME_ZONE='+00:00' */;
 /*!40014 SET @OLD_UNIQUE_CHECKS=@@UNIQUE_CHECKS, UNIQUE_CHECKS=0 */;
@@ -21,13 +21,13 @@ USE portfolio;
 
 DROP TABLE IF EXISTS `Realisation`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
-/*!50503 SET character_set_client = utf8mb4 */;
+/*!50503 SET character_set_client = utf8 */;
 CREATE TABLE `Realisation` (
   `codename` varchar(255) NOT NULL,
   `title` varchar(255) NOT NULL,
   `title_fr` varchar(255) NULL,
   PRIMARY KEY (`codename`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_bin;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -36,14 +36,14 @@ CREATE TABLE `Realisation` (
 
 DROP TABLE IF EXISTS `Skill`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
-/*!50503 SET character_set_client = utf8mb4 */;
+/*!50503 SET character_set_client = utf8 */;
 CREATE TABLE `Skill` (
   `name` varchar(255) NOT NULL,
   `name_fr` varchar(255) NULL,
   `skillType` ENUM('LANGUAGE', 'TOOL', 'OTHER') NOT NULL,
   `masteryLevelOutOfTen` int NOT NULL,
   PRIMARY KEY (`name`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_bin;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -52,7 +52,7 @@ CREATE TABLE `Skill` (
 
 DROP TABLE IF EXISTS `Uses`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
-/*!50503 SET character_set_client = utf8mb4 */;
+/*!50503 SET character_set_client = utf8 */;
 CREATE TABLE `Uses` (
   `realisation_name` varchar(255) NOT NULL,
   `skill_name` varchar(255) NOT NULL,
@@ -60,7 +60,7 @@ CREATE TABLE `Uses` (
   KEY `skill_name` (`skill_name`),
   CONSTRAINT `Uses_ibfk_1` FOREIGN KEY (`realisation_name`) REFERENCES `Realisation` (`codename`),
   CONSTRAINT `Uses_ibfk_2` FOREIGN KEY (`skill_name`) REFERENCES `Skill` (`name`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_bin;
 /*!40101 SET character_set_client = @saved_cs_client */;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
 

@@ -5,19 +5,18 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="668ec5e6-5c3f-4b6d-8b5a-76d8b6035301" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/0971029d-0a18-40f9-b195-bf02b7662656.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/dev/database_creation_script.sql" beforeDir="false" afterPath="$PROJECT_DIR$/dev/database_creation_script.sql" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dev/database_filling_script.sql" beforeDir="false" afterPath="$PROJECT_DIR$/dev/database_filling_script.sql" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/css/realisations/details/formatiut.css" beforeDir="false" afterPath="$PROJECT_DIR$/resources/css/realisations/details/styleGenericDetail.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/css/realisations/styleIndex.css" beforeDir="false" afterPath="$PROJECT_DIR$/resources/css/realisations/styleIndex.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Configuration/WebsiteConfiguration.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Configuration/WebsiteConfiguration.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Controllers/AbstractController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controllers/AbstractController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Controllers/ControllerRealisations.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controllers/ControllerRealisations.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Model/DataObject/Skill.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Model/DataObject/Skill.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Model/Repository/UsesRepository.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Model/Repository/UsesRepository.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/views/cv/viewIndex_en.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/cv/viewIndex.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/views/cv/viewIndex_fr.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/views/presentation/viewIndex_en.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/presentation/viewIndex_en.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/views/realisations/details/formatiut_en.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/realisations/details/formatiut_en.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/views/realisations/details/formatiut_fr.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/realisations/details/formatiut_fr.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/views/realisations/details/revolve_fr.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/realisations/details/revolve_fr.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/views/realisations/details/sockets_fr.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/realisations/details/sockets_fr.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/views/realisations/details/viewGenericDetail.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/realisations/details/viewGenericDetail.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -60,7 +59,7 @@
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
     &quot;git-widget-placeholder&quot;: &quot;master&quot;,
-    &quot;last_opened_file_path&quot;: &quot;/home/notisma/4Projects/Computing/Web/1Projects/Portfolio/src/views/projection&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/home/ann2/izoretr/public_html/nots_portfolio/src/views/realisations/details&quot;,
     &quot;list.type.of.created.stylesheet&quot;: &quot;CSS&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
@@ -78,6 +77,7 @@
 }</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/views/realisations/details" />
       <recent name="$PROJECT_DIR$/src/views/projection" />
       <recent name="$PROJECT_DIR$/src/views/cv" />
       <recent name="$PROJECT_DIR$/src/views/presentation" />
@@ -105,6 +105,8 @@
       <workItem from="1704401201057" duration="2852000" />
       <workItem from="1704464288966" duration="3738000" />
       <workItem from="1704580704685" duration="3872000" />
+      <workItem from="1704717208308" duration="3253000" />
+      <workItem from="1704726244234" duration="5126000" />
     </task>
     <servers />
   </component>

@@ -13,7 +13,7 @@ abstract class AbstractController
     {
         $cssPath = str_replace('view', 'style', $viewPath);
         $cssPath .= ".css";
-
+        
         if (!file_exists(__DIR__ . "/../views/" . $viewPath . '.php'))
             $viewPath .= '_' . Translation::getCurrentLanguage();
         $viewPath .= '.php';

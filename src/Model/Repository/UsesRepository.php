@@ -30,7 +30,7 @@ class UsesRepository extends AbstractRepository
         return "Uses";
     }
 
-    protected function getPrimaryKeyName(): null
+    protected function getPrimaryKeyName(): ?string
     {
         return null;
     }

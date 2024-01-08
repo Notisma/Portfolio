@@ -12,7 +12,7 @@ use NP\Configuration\WebsiteConfiguration as W;
     <a href="?controller=Realisations&action=displayIndex">recent productions</a>, in a professionnal context but also
     some personnel projects.
     <br>
-    I hope you will have a good time browsing my site !!!!
+    I hope you will have a good time browsing my site !
     <br>
     PS : If you're interested, just like all of my projects, this application is Open-Source ! (<a
             href="<?= W::getSourceCode() ?>">source link</a> in the

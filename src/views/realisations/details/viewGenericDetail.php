@@ -4,18 +4,24 @@
 use NP\Lib\Translation;
 use NP\Model\DataObject\Realisation;
 
-$pathName = $project->codename . '_' . Translation::getCurrentLanguage() . '.php';
+$pathName = $project->codename;
+
+if (!file_exists(__DIR__ . "/$pathName.php"))
+    $pathName .= '_' . Translation::getCurrentLanguage();
+$pathName .= '.php';
 
 echo "<h2>$project->title</h2>";
 
 $comps = (new \NP\Model\Repository\UsesRepository())->getSkillsByRealisation($project->codename);
 
-echo "<h3>Compétences mises en œuvre :</h3>
+echo "<h3>" . Translation::translate("Compétences mises en œuvre", "Skills concerned") . " :</h3>
       <ul>";
 
 foreach ($comps as $skill)
     echo "<li>$skill</li>";
 
-echo "</ul>";
-
+echo "</ul>
+      <p>
+        <br>";
 require $pathName;
+echo "</p>";
