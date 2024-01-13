@@ -12,10 +12,10 @@ use NP\Model\DataObject\Skill;
 <?php
 if (Translation::getCurrentLanguage() == 'en') echo "<p>I haven't written my CV in English yet, but the French version is here :</p>";
 ?>
-<object data="<?= W::getSiteRoot() ?>/resources/other/CV_2023.pdf" type="application/pdf"
+<object data="<?= W::getSiteRoot() ?>/resources/other/CV_2024.pdf" type="application/pdf"
         width="100%" height="550px">
     <p><?= Translation::translate("Échec lors de l'affichage du PDF.", "Unable to display PDF file.") ?><a
-                href="<?= W::getSiteRoot() ?>/resources/other/CV_2023.pdf"><?= Translation::translate("Télécharger</a> à la place.", "Download</a> instead.") ?>
+                href="<?= W::getSiteRoot() ?>/resources/other/CV_2024.pdf"><?= Translation::translate("Télécharger</a> à la place.", "Download</a> instead.") ?>
     </p>
 </object>
 
