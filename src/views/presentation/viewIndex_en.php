@@ -5,6 +5,9 @@ use NP\Configuration\WebsiteConfiguration as W;
 ?>
 <h2>Welcome to my presentation website !</h2>
 <p>
+    || This website is still a WIP, please excuse the lack of content on certain pages ||
+    <br>
+    <br>
     I am Raphaël Izoret, a student in Computer Science and IT.
     <br>
     You are currently on my main website. It contains <a href="?controller=CV&action=displayIndex">professionnal
