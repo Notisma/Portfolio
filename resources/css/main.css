@@ -1,25 +1,29 @@
 :root {
     /* cf. general.js */
 
-    --light-bg_clr: #c1c1c1;
-    --dark-bg_clr: rgb(59, 64, 66);
-    --param-bg_clr: var(--light-bg_clr);
+    --light-bg: #c1c1c1;
+    --dark-bg: rgb(59, 64, 66);
+    --param-bg: var(--light-bg);
 
-    --light-section_clr: #fff;
-    --dark-section_clr: rgb(35, 37, 38);
-    --param-section_clr: var(--light-section_clr);
+    --light-section: #fff;
+    --dark-section: rgb(35, 37, 38);
+    --param-section: var(--light-section);
 
-    --light-txt_clr: rgb(35, 37, 38);
-    --dark-txt_clr: #d1cdc7;
-    --param-txt_clr: var(--light-txt_clr);
+    --light-txt: rgb(35, 37, 38);
+    --dark-txt: #d1cdc7;
+    --param-txt: var(--light-txt);
 
-    --light-footer_bg_clr: #f0f0f0;
-    --dark-footer_bg_clr: rgb(47, 51, 54);
-    --param-footer_bg_clr: var(--light-footer_bg_clr);
+    --light-footer_bg: #f0f0f0;
+    --dark-footer_bg: rgb(47, 51, 54);
+    --param-footer_bg: var(--light-footer_bg);
 
-    --light-special_txt_clr: #616161;
-    --dark-special_txt_clr: #939393;
-    --param-special_txt_clr: var(--light-special_txt_clr);
+    --light-special_txt: #616161;
+    --dark-special_txt: #939393;
+    --param-special_txt: var(--light-special_txt);
+    
+    --light-hypertxt: blue;
+    --dark-hypertxt: lightblue;
+    --param-hypertxt: var(--light-hypertxt);
 }
 
 html {
@@ -35,7 +39,7 @@ body {
     margin: 0;
     padding: 0;
 
-    background-color: var(--param-bg_clr);
+    background-color: var(--param-bg);
 }
 
 header {
@@ -55,13 +59,13 @@ header {
 
     box-shadow: 8px 8px 7px #888;
 
-    background-color: var(--param-section_clr);
+    background-color: var(--param-section);
 }
 
 footer {
     grid-row: 3;
 
-    background-color: var(--param-footer_bg_clr);
+    background-color: var(--param-footer_bg);
     text-align: center;
     padding: 10px 0 0 0;
     min-height: 210px;
@@ -74,7 +78,7 @@ br {
 }
 
 h1, h2, h3, p, li {
-    color: var(--param-txt_clr);
+    color: var(--param-txt);
 }
 
 header > #iconsAndPageTitle {
@@ -165,7 +169,7 @@ header > #iconsAndPageTitle > #language_icon_div > img {
 }
 
 header > nav {
-    background: var(--param-footer_bg_clr);
+    background: var(--param-footer_bg);
     border: 1px solid #ccc;
 
     height: 40px;
@@ -191,7 +195,7 @@ header > nav > #sectionsMenu > .sectionsMenuItem {
 header > nav > #sectionsMenu > .sectionsMenuItem > a {
     display: block;
     text-decoration: none;
-    color: var(--param-special_txt_clr);
+    color: var(--param-special_txt);
     padding: 10px 0 0 0;
 
     max-height: 100%;
@@ -205,4 +209,12 @@ header > nav > #sectionsMenu > .sectionsMenuItem > a {
 
 .show {
     display: block;
+}
+
+
+/* specifics */
+
+a {
+    text-decoration: underline;
+    color: var(--param-hypertxt);
 }

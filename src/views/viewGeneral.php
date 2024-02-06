@@ -66,7 +66,7 @@ use NP\Lib\Translation as T;
     <p>--------------------
         <?= T::translate(
             '<br>Portfolio de Raphaël Izoret
-        <br>Aucuns droits réservés
+        <br>Aucun droit réservé
         <br><a href="' . W::getSourceCode() . '">Code source</a>'
             , '<br>Portfolio of Raphaël Izoret
         <br>No rights reserved

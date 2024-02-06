@@ -2,7 +2,7 @@ function computeTheme(theme) {
     let r = document.querySelector(':root');
     let newTheme = getComputedStyle(r);
 
-    ['bg_clr', 'section_clr', 'txt_clr', 'footer_bg_clr', 'special_txt_clr'].forEach(
+    ['bg', 'section', 'txt', 'footer_bg', 'special_txt', 'hypertxt'].forEach(
         (cssElem) =>
             r.style.setProperty('--param-' + cssElem, newTheme.getPropertyValue('--' + theme + '-' + cssElem))
     );
@@ -22,4 +22,8 @@ window.onclick = function (event) {
             openDropdown.classList.add('hide');
         }
     }
+}
+
+function copyMailToClipboard() {
+    navigator.clipboard.writeText('raphael.izoret@etu.umontpellier.fr');
 }
