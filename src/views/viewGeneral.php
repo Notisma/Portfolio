@@ -15,7 +15,10 @@ use NP\Lib\Translation as T;
     <link rel="icon" type="image/png" href="<?= W::getSiteRoot() ?>/resources/images/website_icon.png">
 
     <link rel="stylesheet" href="<?= W::getSiteRoot() ?>/resources/css/main.css">
+    <link rel="stylesheet" href="<?= W::getSiteRoot() ?>/resources/css/text.css">
     <link rel="stylesheet" href="<?= W::getSiteRoot() ?>/resources/css/<?= $secondaryCSSpath ?>">
+    
+    <link href="https://fonts.googleapis.com/css2?family=Dosis:wght@200;400;700&display=swap" rel="stylesheet">
 
     <script src="<?= W::getSiteRoot() ?>/resources/javascript/general.js"></script>
     <script type="text/javascript">computeTheme("<?= Theme::getCurrentTheme() ?>");</script>
@@ -47,10 +50,10 @@ use NP\Lib\Translation as T;
             <div class="sectionsMenuItem"><a
                         href="?controller=Presentation&action=displayIndex"><?= T::getTitleElem_Presentation() ?></a>
             </div>
-            <div class="sectionsMenuItem"><a href="?controller=CV&action=displayIndex"><?= T::getTitleElem_CV() ?></a>
-            </div>
             <div class="sectionsMenuItem"><a
                         href="?controller=Projection&action=displayIndex"><?= T::getTitleElem_Projet() ?></a></div>
+            <div class="sectionsMenuItem"><a href="?controller=CV&action=displayIndex"><?= T::getTitleElem_CV() ?></a>
+            </div>
             <div class="sectionsMenuItem"><a
                         href="?controller=Realisations&action=displayIndex"><?= T::getTitleElem_Realisations() ?></a>
             </div>

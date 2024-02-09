@@ -11,9 +11,9 @@ use NP\Configuration\WebsiteConfiguration as W;
     Je suis Raphaël Izoret, un étudiant dans les domaines de l'informatique, et vous vous trouvez actuellement sur mon
     site principal.
     <br>
-    Il recense des <a href="?controller=CV&action=displayIndex">informations professionnelles</a> sur moi ainsi que
-    des <a href="?controller=Realisations&action=displayIndex">réalisations récentes</a>,
-    dans un contexte d'étude autant que personnel.
+    Il contient des informations <a href="?controller=Projection&action=displayIndex">personnelles</a> et <a
+            href="?controller=CV&action=displayIndex">professionnelles</a> sur moi ainsi que
+    certaines de mes <a href="?controller=Realisations&action=displayIndex">réalisations récentes</a>.
     <br>
     J'espère que vous passerez un bon moment sur mon site !
 </p>

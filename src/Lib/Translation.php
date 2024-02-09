@@ -10,7 +10,7 @@ class Translation
     public static function getCurrentLanguage(): string
     {
         if (!Session::getInstance()->contains('language'))
-            Session::getInstance()->register('language', 'en');
+            Session::getInstance()->register('language', 'fr');
 
         return Session::getInstance()->read('language');
     }
@@ -35,7 +35,7 @@ class Translation
 
     public static function getTitleElem_Presentation(): string
     {
-        return self::translate('Présentation', 'Presentation');
+        return self::translate('Accueil', 'Index');
     }
 
     public static function getTitleElem_CV(): string
@@ -45,7 +45,7 @@ class Translation
 
     public static function getTitleElem_Projet(): string
     {
-        return self::translate('Projet Professionnel', 'Studies/carrer plan');
+        return self::translate('Qui suis-je', 'About me');
     }
 
     public static function getTitleElem_Realisations(): string

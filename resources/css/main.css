@@ -20,10 +20,14 @@
     --light-special_txt: #616161;
     --dark-special_txt: #939393;
     --param-special_txt: var(--light-special_txt);
-    
+
     --light-hypertxt: blue;
     --dark-hypertxt: lightblue;
     --param-hypertxt: var(--light-hypertxt);
+}
+
+* {
+    min-width: 0;
 }
 
 html {
@@ -53,7 +57,7 @@ header {
     grid-row: 2;
 
     padding: 1% 2%;
-    margin: 0 15%;
+    margin: 0 20%;
 
     border: 0 solid #000;
 
@@ -73,20 +77,11 @@ footer {
 
 /* ----------------------------- */
 
-br {
-    margin-bottom: 15px;
-}
-
-h1, h2, h3, p, li {
-    color: var(--param-txt);
-}
-
 header > #iconsAndPageTitle {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
 
     min-height: 0;
-    min-width: 0;
 }
 
 header > #iconsAndPageTitle > #theme_icon_div {
@@ -95,7 +90,6 @@ header > #iconsAndPageTitle > #theme_icon_div {
     max-height: 100%;
     overflow: hidden;
 
-    min-width: 0;
     max-width: 100px;
 }
 
@@ -132,7 +126,6 @@ header > #iconsAndPageTitle > #language_icon_div {
 header > #iconsAndPageTitle > #language_icon_div > img {
     max-height: 100%;
     overflow: hidden;
-    min-width: 0;
 
     max-width: 100px;
     height: auto;
@@ -153,19 +146,6 @@ header > #iconsAndPageTitle > #language_icon_div > img {
     min-width: 150px;
     box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
     z-index: 1;
-}
-
-/* Links inside the dropdown */
-#language_dropdown > a {
-    color: black;
-    padding: 12px 16px;
-    text-decoration: none;
-    display: block;
-}
-
-/* Change color of dropdown links on hover */
-#language_dropdown > a:hover {
-    background-color: #ddd;
 }
 
 header > nav {
@@ -209,12 +189,4 @@ header > nav > #sectionsMenu > .sectionsMenuItem > a {
 
 .show {
     display: block;
-}
-
-
-/* specifics */
-
-a {
-    text-decoration: underline;
-    color: var(--param-hypertxt);
 }

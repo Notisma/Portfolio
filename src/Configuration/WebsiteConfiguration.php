@@ -11,7 +11,7 @@ class WebsiteConfiguration
     static public function getSiteRoot(): string
     {
         if ($_SERVER["HTTP_HOST"] == "webinfo.iutmontp.univ-montp2.fr")
-            return '/~izoretr/nots_portfolio';
+            return '/~izoretr/portfolio';
         else if ($_SERVER['SERVER_PORT'] == 2023)
             return '';
         else
@@ -25,6 +25,6 @@ class WebsiteConfiguration
 
     public static function getSourceCode(): string
     {
-        return 'https://gitlabinfo.iutmontp.univ-montp2.fr/izoretr/notsportfolio" target="_blank" rel="noopener noreferrer';
+        return 'https://gitlabinfo.iutmontp.univ-montp2.fr/izoretr/portfolio" target="_blank" rel="noopener noreferrer';
     }
 }

@@ -1,0 +1,33 @@
+h1, h2, h3, p, li {
+    color: var(--param-txt);
+    font-family: "Dosis", "Times", serif;
+}
+
+a {
+    text-decoration: underline;
+    color: var(--param-hypertxt);
+}
+
+#subPage p, li {
+    font-size: large;
+    text-align: justify;
+    text-justify: inter-word;
+}
+
+br {
+    margin-bottom: 15px;
+}
+
+/* Links inside the dropdown */
+#language_dropdown > a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+/* Change color of dropdown links on hover */
+#language_dropdown > a:hover {
+    background-color: #ddd;
+}
+
