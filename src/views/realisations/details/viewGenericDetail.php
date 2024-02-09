@@ -3,6 +3,7 @@
 
 use NP\Lib\Translation;
 use NP\Model\DataObject\Realisation;
+use NP\Model\Repository\UsesRepository;
 
 $pathName = $project->codename;
 
@@ -12,7 +13,7 @@ $pathName .= '.php';
 
 echo "<h2>$project->title</h2>";
 
-$comps = (new \NP\Model\Repository\UsesRepository())->getSkillsByRealisation($project->codename);
+$comps = (new UsesRepository())->getSkillsByRealisation($project->codename);
 
 echo "<h3>" . Translation::translate("Compétences mises en œuvre", "Skills concerned") . " :</h3>
       <ul>";

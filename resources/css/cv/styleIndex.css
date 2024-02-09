@@ -1,0 +1,9 @@
+#competencesEtSavoirfaire {
+    margin-top: 2%;
+    display: flex;
+    flex-direction: row;
+}
+
+#savoirfaire {
+    margin-left: 10%;
+}

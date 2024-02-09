@@ -9,6 +9,6 @@ class ControllerPresentation extends AbstractController
 
     public static function displayIndex(): void
     {
-        self::displayView(Translation::getTitleElem_Presentation(), "presentation/viewIndex");
+        self::displayView(Translation::getTitleElem_Presentation(), "index/viewIndex");
     }
 }

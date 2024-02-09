@@ -11,7 +11,7 @@ class ControllerCV extends AbstractController
     public static function displayIndex(): void
     {
         $skills = [
-            'Languages' => (new SkillRepository())->getOrderedSkillsFromCategory('LANGUAGE'),
+            Translation::translate('Langages', 'Languages') => (new SkillRepository())->getOrderedSkillsFromCategory('LANGUAGE'),
             Translation::translate('Outils', 'Tools') => (new SkillRepository())->getOrderedSkillsFromCategory('TOOL'),
             Translation::translate('Autres', 'Others') => (new SkillRepository())->getOrderedSkillsFromCategory('OTHER')
         ];
