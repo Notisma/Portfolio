@@ -3,11 +3,12 @@
  * @var Realisation[] $projects
  */
 
+use NP\Controllers\ControllerRealisations;
 use NP\Lib\Translation;
 use NP\Model\DataObject\Realisation;
 
 ?>
-<h2><?= Translation::getTitleElem_Realisations() ?></h2>
+<h2><?= ControllerRealisations::getPageTitle() ?></h2>
 <ul>
     <?php
     foreach ($projects as $pj)

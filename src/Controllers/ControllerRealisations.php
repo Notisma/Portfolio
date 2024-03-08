@@ -10,7 +10,7 @@ class ControllerRealisations extends AbstractController
     public static function displayIndex(): void
     {
         $projects = (new RealisationRepository())->getDataObjectList();
-        self::displayView(Translation::getTitleElem_Realisations(), "realisations/viewIndex", [
+        self::displayView(self::getPageTitle(), "realisations/viewIndex", [
             'projects' => $projects,
         ]);
     }
@@ -30,5 +30,10 @@ class ControllerRealisations extends AbstractController
             'project' => $proj,
         ]);
 
+    }
+    
+    public static function getPageTitle(): string
+    {
+        return Translation::translate('Mes Réalisations', 'My work');
     }
 }

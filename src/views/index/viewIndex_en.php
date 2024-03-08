@@ -18,8 +18,6 @@ use NP\Configuration\WebsiteConfiguration as W;
     I hope you will have a good time browsing my site !
 </p>
 
-<?php require 'contact.php' ?>
-
 <p>
     PS : If you're interested, just like all of my projects, this application is Open-Source ! (<a
             href="<?= W::getSourceCode() ?>">source link</a> in the

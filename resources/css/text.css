@@ -1,11 +1,17 @@
+@import './vars.css';
+
 h1, h2, h3, p, li {
     color: var(--param-txt);
     font-family: "Dosis", "Times", serif;
 }
 
-a {
+a, #email {
     text-decoration: underline;
     color: var(--param-hypertxt);
+}
+
+#email:hover {
+    cursor: pointer;
 }
 
 #subPage p, li {

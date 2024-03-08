@@ -1,0 +1,27 @@
+:root {
+    /* cf. general.js */
+
+    --light-bg: #c1c1c1;
+    --dark-bg: rgb(59, 64, 66);
+    --param-bg: var(--light-bg);
+
+    --light-section: #fff;
+    --dark-section: rgb(35, 37, 38);
+    --param-section: var(--light-section);
+
+    --light-txt: rgb(35, 37, 38);
+    --dark-txt: #d1cdc7;
+    --param-txt: var(--light-txt);
+
+    --light-footer_bg: #f0f0f0;
+    --dark-footer_bg: rgb(47, 51, 54);
+    --param-footer_bg: var(--light-footer_bg);
+
+    --light-special_txt: #616161;
+    --dark-special_txt: #939393;
+    --param-special_txt: var(--light-special_txt);
+
+    --light-hypertxt: blue;
+    --dark-hypertxt: lightblue;
+    --param-hypertxt: var(--light-hypertxt);
+}

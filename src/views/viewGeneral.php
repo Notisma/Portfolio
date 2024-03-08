@@ -1,6 +1,11 @@
 <?php
 
 use NP\Configuration\WebsiteConfiguration as W;
+use NP\Controllers\ControllerContact;
+use NP\Controllers\ControllerCV;
+use NP\Controllers\ControllerPresentation;
+use NP\Controllers\ControllerProjection;
+use NP\Controllers\ControllerRealisations;
 use NP\Lib\Theme;
 use NP\Lib\Translation as T;
 
@@ -17,7 +22,7 @@ use NP\Lib\Translation as T;
     <link rel="stylesheet" href="<?= W::getSiteRoot() ?>/resources/css/main.css">
     <link rel="stylesheet" href="<?= W::getSiteRoot() ?>/resources/css/text.css">
     <link rel="stylesheet" href="<?= W::getSiteRoot() ?>/resources/css/<?= $secondaryCSSpath ?>">
-    
+
     <link href="https://fonts.googleapis.com/css2?family=Dosis:wght@200;400;700&display=swap" rel="stylesheet">
 
     <script src="<?= W::getSiteRoot() ?>/resources/javascript/general.js"></script>
@@ -48,14 +53,19 @@ use NP\Lib\Translation as T;
     <nav>
         <div id="sectionsMenu">
             <div class="sectionsMenuItem"><a
-                        href="?controller=Presentation&action=displayIndex"><?= T::getTitleElem_Presentation() ?></a>
+                        href="?controller=Presentation&action=displayIndex"><?= ControllerPresentation::getPageTitle() ?></a>
             </div>
             <div class="sectionsMenuItem"><a
-                        href="?controller=Projection&action=displayIndex"><?= T::getTitleElem_Projet() ?></a></div>
-            <div class="sectionsMenuItem"><a href="?controller=CV&action=displayIndex"><?= T::getTitleElem_CV() ?></a>
+                        href="?controller=Projection&action=displayIndex"><?= ControllerProjection::getPageTitle() ?></a>
             </div>
             <div class="sectionsMenuItem"><a
-                        href="?controller=Realisations&action=displayIndex"><?= T::getTitleElem_Realisations() ?></a>
+                        href="?controller=CV&action=displayIndex"><?= ControllerCV::getPageTitle() ?></a>
+            </div>
+            <div class="sectionsMenuItem"><a
+                        href="?controller=Realisations&action=displayIndex"><?= ControllerRealisations::getPageTitle() ?></a>
+            </div>
+            <div class="sectionsMenuItem"><a
+                        href="?controller=Contact&action=displayIndex"><?= ControllerContact::getPageTitle() ?></a>
             </div>
         </div>
     </nav>

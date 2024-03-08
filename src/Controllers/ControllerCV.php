@@ -15,6 +15,11 @@ class ControllerCV extends AbstractController
             Translation::translate('Outils', 'Tools') => (new SkillRepository())->getOrderedSkillsFromCategory('TOOL'),
             Translation::translate('Autres', 'Others') => (new SkillRepository())->getOrderedSkillsFromCategory('OTHER')
         ];
-        self::displayView(Translation::getTitleElem_CV(), "cv/viewIndex", ['skills' => $skills]);
+        self::displayView(self::getPageTitle(), "cv/viewIndex", ['skills' => $skills]);
+    }
+    
+    public static function getPageTitle(): string
+    {
+        return Translation::translate('CV et compétences', 'CV & Skills');
     }
 }
