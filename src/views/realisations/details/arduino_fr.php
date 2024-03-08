@@ -3,7 +3,7 @@
 use NP\Configuration\WebsiteConfiguration as W;
 
 ?>
-Voici un petit modèle électronique que j'ai réalisé avec Arduino UNO :
+Voici un petit modèle électronique que j'ai réalisé avec Arduino UNO, en seulement quelques jours :
 <br><img src="<?= W::getImages() ?>realisations/arduino/model_front.jpg" alt=""><br>
 Il a été créé dans un contexte de découverte de l'Arduino, en auto-didacte, pour affiner mes compétences en
 électronique. Il permet de jouer une piste de musique avec uniquement un buzzer de fréquence, mais uniquement si il

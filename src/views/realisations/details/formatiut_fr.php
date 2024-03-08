@@ -1,4 +1,4 @@
-Format'IUT est un projet de groupe, consistant à créer un grand site web dynamique.<br>Créé par une équipe de 6
+Format'IUT est un projet de groupe qui a duré 5 mois, consistant à créer un grand site web dynamique.<br>Créé par une équipe de 6
 personnes, dont moi occupant un rôle de développeur et product owner, le site consiste à offrir une gestion
 pratique, intuitive et sécurisée des stages et alternances de l'IUT de Montpellier.<br><img
         src="../resources/images/realisations/formatiut/admin.png" alt=""><br>Il contient notamment une grande base

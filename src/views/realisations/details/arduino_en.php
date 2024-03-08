@@ -3,7 +3,7 @@
 use NP\Configuration\WebsiteConfiguration as W;
 
 ?>
-Here is a small electronic model I was able to make using Arduino UNO :
+Here is a small electronic model I was able to make using Arduino UNO, in just a few days :
 <br><img src="<?= W::getImages() ?>realisations/arduino/model_front.jpg" alt=""></br>
 It was created in a context of self-taught Arduino discovery, to improve my electronics skills. It lets you play a
 music track with just a frequency buzzer, but only if it spots an object less than a meter in front of it

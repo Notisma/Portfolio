@@ -19,7 +19,7 @@ echo "<h3>" . Translation::translate("Compétences mises en œuvre", "Skills con
       <ul>";
 
 foreach ($comps as $skill)
-    echo "<li>$skill</li>";
+    echo '<li>' . $skill->name . '</li>';
 
 echo "</ul>
       <p>

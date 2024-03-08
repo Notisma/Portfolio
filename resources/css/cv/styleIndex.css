@@ -4,6 +4,10 @@
     flex-direction: row;
 }
 
+#competences {
+    width: 30%;
+}
+
 #savoirfaire {
     margin-left: 10%;
 }

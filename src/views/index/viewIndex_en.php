@@ -5,7 +5,7 @@ use NP\Configuration\WebsiteConfiguration as W;
 ?>
 <h2>Welcome to my presentation website !</h2>
 <p>
-    || This website is still a WIP, please excuse the lack of content on certain pages ||
+    || The english translation is still a WIP, please excuse the lack of content on certain pages ||
     <br>
     <br>
     I am Raphaël Izoret, a student in Computer Science and IT.

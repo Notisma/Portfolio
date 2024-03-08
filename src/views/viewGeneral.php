@@ -1,5 +1,8 @@
 <?php
 
+/** @var string $pageTitle */
+/** @var stirng $secondaryCSSpath */
+
 use NP\Configuration\WebsiteConfiguration as W;
 use NP\Controllers\ControllerContact;
 use NP\Controllers\ControllerCV;
@@ -17,7 +20,7 @@ use NP\Lib\Translation as T;
     <meta name="description" content="portfolio raphaël izoret CV professionnal">
 
     <title>Portfolio - <?= $pageTitle ?></title>
-    <link rel="icon" type="image/png" href="<?= W::getSiteRoot() ?>/resources/images/website_icon.png">
+    <link rel="icon" type="image/png" href="<?= W::getSiteRoot() ?>/resources/images/icons/website_icon.png">
 
     <link rel="stylesheet" href="<?= W::getSiteRoot() ?>/resources/css/main.css">
     <link rel="stylesheet" href="<?= W::getSiteRoot() ?>/resources/css/text.css">

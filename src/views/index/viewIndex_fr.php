@@ -5,10 +5,8 @@ use NP\Configuration\WebsiteConfiguration as W;
 ?>
 <h2>Bienvenue sur mon site de présentation !</h2>
 <p>
-    || Ce site est un WIP, il manque donc du contenu sur certaines pages ||
     <br>
-    <br>
-    Je suis Raphaël Izoret, un étudiant dans les domaines de l'informatique, et vous vous trouvez actuellement sur mon
+    Je suis Raphaël Izoret, étudiant dans les domaines de l'informatique, et vous vous trouvez actuellement sur mon
     site principal.
     <br>
     Il contient des informations <a href="?controller=Projection&action=displayIndex">personnelles</a> et <a

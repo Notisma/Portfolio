@@ -1,4 +1,4 @@
-Format'IUT is a group project involving the creation of a large, dynamic website.<br>Created by a team of 6 people,
+Format'IUT is a 5 months long group project involving the creation of a large, dynamic website.<br>Created by a team of 6 people,
 including myself in the role of developer and product owner, the site is designed to offer practical, intuitive and
 secure management of internships and work-study programs at the Montpellier IUT.<br><img
         src="../resources/images/realisations/formatiut/admin.png" alt=""><br>It includes a large MySQL database,

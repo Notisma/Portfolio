@@ -20,8 +20,9 @@ if (Translation::getCurrentLanguage() == 'en') echo "<p>I haven't written my CV 
 </object>
 
 <div id="competencesEtSavoirfaire">
-    <div>
+    <div id="competences">
         <h2><?= Translation::translate("Compétences", "Skills") ?></h2>
+        <h3><?= Translation::translate("(par niveau de maîtrise)", "(ordered by level of mastery)") ?></h3>
 
         <?php
         foreach ($skills as $cat => $groupOfSkills) {
