@@ -12,8 +12,8 @@ class WebsiteConfiguration
     {
         if ($_SERVER["HTTP_HOST"] == "webinfo.iutmontp.univ-montp2.fr")
             return '/~izoretr/portfolio';
-        else if ($_SERVER['SERVER_PORT'] == 2023)
-            return '';
+        else if ($_SERVER['SERVER_PORT'] == 1111)
+            return '/Portfolio';
         else
             throw new RuntimeException("Site root configuration non-trouvée !");
     }

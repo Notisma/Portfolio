@@ -15,7 +15,7 @@ class Session
     private function __construct()
     {
         if (session_start() === false) {
-            throw new Exception("The session couldn't start.");
+          //  throw new Exception("The session couldn't start.");
         }
     }
 

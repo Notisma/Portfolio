@@ -2,8 +2,6 @@
 
 namespace NP\Configuration;
 
-use http\Exception\RuntimeException;
-
 class DatabaseConfiguration
 {
 
@@ -17,17 +15,17 @@ class DatabaseConfiguration
 
     static private array $localConf = array(
         'hostname' => 'localhost',
-        'database' => 'portfolio',
+        'database' => 'bazar',
         'port' => '3306',
         'login' => 'notisma',
-        'password' => ''
+        'password' => 'final'
     );
 
     static private function getConfig(): array
     {
         if ($_SERVER["HTTP_HOST"] == "webinfo.iutmontp.univ-montp2.fr")
             return self::$iutConf;
-        else if ($_SERVER['SERVER_PORT'] == 2023)
+        else if ($_SERVER['SERVER_PORT'] == 1111)
             return self::$localConf;
         else
             throw new RuntimeException("Configuration non-trouvée !");
