@@ -10,6 +10,8 @@ $loader->addNamespace('NP', __DIR__ . '/../src');
 
 use NP\Controllers\AbstractController as CGlobal;
 
+NP\Lib\Session::getInstance();
+
 if (isset($_GET['controller'])) {
     $controller = ucfirst($_GET["controller"]);
 } else {
