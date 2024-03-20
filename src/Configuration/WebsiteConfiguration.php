@@ -25,6 +25,6 @@ class WebsiteConfiguration
 
     public static function getSourceCode(): string
     {
-        return 'https://gitlabinfo.iutmontp.univ-montp2.fr/izoretr/portfolio" target="_blank" rel="noopener noreferrer';
+        return 'https://github.com/Notisma/Portfolio" target="_blank" rel="noopener noreferrer';
     }
 }
